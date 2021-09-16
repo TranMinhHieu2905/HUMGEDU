@@ -13,5 +13,10 @@ namespace EDUHUMG.Models
         public int Idkhoahoc { get; set; }
 
         public virtual Khoahoc IdkhoahocNavigation { get; set; }
+
+        public static implicit operator int(Danhmuc v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
